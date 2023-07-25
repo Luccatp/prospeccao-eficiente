@@ -40,21 +40,21 @@ const LuisaGalery: FC<LuisaGaleryProps> = ({}) => {
         tenetur, iusto sunt incidunt impedit earum, expedita deleniti atque
         quas.
       </Paragraph>
-      <div className="grid grid-rows-3 grid-flow-col gap-4 sm:grid-rows-2 sm:grid-cols-2 sm:row-span-2 sm:col-start-2 sm:row-start-2 sm:col-span-2 sm:self-center">
+      <div className="grid grid-rows-3 grid-flow-col gap-4 sm:grid-rows-1 sm:row-span-2 sm:col-start-2 sm:row-start-2 sm:col-span-2 sm:self-center sm:grid-flow-row  md:grid-rows-2 md:grid-cols-2">
         <LottieAnimation
-          className="col-span-3 sm:col-span-2 sm:justify-self-center"
+          className="col-span-3 sm:col-span-1 md:col-span-2 md:justify-self-center"
           animationData={Instagram}
         />
         <LottieAnimation
-          className="row-span-2 sm:row-span-1 sm:justify-self-center"
+          className="row-span-2 sm:col-span-1 md:row-span-1 md:justify-self-center"
           animationData={Youtube}
         />
         <LottieAnimation
-          className="col-span-2 row-span-2 sm:row-span-1 sm:justify-self-center"
+          className="col-span-2 row-span-2 sm:col-span-1 sm:row-span-1 md:row-span-1 md:justify-self-center"
           animationData={Tiktok}
         />
       </div>
-      <div className="grid gap-5 sm:flex sm:flex-grow">
+      <div className="grid gap-5 sm:grid-flow-col sm:col-span-2 sm:items-center">
         {luisaData.map(({ title, spec }) => (
           <LuisaData title={title} spec={spec} key={title + spec} />
         ))}

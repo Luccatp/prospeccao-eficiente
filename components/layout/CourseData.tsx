@@ -46,7 +46,7 @@ const Info = ({ title, text, className }: Info) => (
 
 const CourseData: FC<CourseDataProps> = ({}) => {
   return (
-    <div className="grid grid-cols-2 gap-y-11 gap-x-2">
+    <div className="grid grid-cols-2 gap-y-11 gap-x-2 md:gap-y-11 md:gap-x-10">
       {textInfo.map(({ title, text, className }, index) => (
         <Info
           title={title}
