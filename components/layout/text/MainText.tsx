@@ -15,7 +15,7 @@ const MainText: FC<MainTextProps> = ({ className, children }) => {
         duration: 1,
         delay: 0.3,
       }}
-      className={`${className}  text-4xl font-bold text-gray-700`}
+      className={`${className}  text-4xl font-bold text-gray-700 sm:text-5xl`}
     >
       {children}
     </motion.h2>

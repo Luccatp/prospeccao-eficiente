@@ -16,7 +16,7 @@ const LittleText: FC<LittleTextProps> = ({ children, className }) => {
         damping: 20,
         delay: 0.7,
       }}
-      className={`${className} text-gray-500`}
+      className={`${className} text-gray-500 sm:text-xl`}
     >
       {children}
     </motion.span>

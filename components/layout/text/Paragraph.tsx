@@ -14,7 +14,7 @@ const Paragraph: FC<ParagraphProps> = ({ className, children }) => {
         type: "spring",
         duration: 0.5,
       }}
-      className={`${className} text-gray-900 text-lg`}
+      className={`${className} text-gray-900 text-lg sm:text-2xl`}
     >
       {children}
     </motion.p>

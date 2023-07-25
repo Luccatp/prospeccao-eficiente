@@ -7,6 +7,7 @@ import Tiktok from "@/public/tiktok.json";
 import Youtube from "@/public/youtube.json";
 import LittleText from "./text/LittleText";
 import MainText from "./text/MainText";
+import Paragraph from "./text/Paragraph";
 
 interface LuisaGaleryProps {}
 
@@ -27,21 +28,33 @@ const luisaData: LuisaDataProps[] = [
 
 const LuisaGalery: FC<LuisaGaleryProps> = ({}) => {
   return (
-    <div className="flex flex-col">
-      <LittleText>Quêm sou eu?</LittleText>
-      <MainText>Luisa Oliveira</MainText>
-      <p className="text-gray-900 my-12 text-lg">
-        lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-      </p>
-      <div className="grid grid-rows-3 grid-flow-col gap-4">
-        <LottieAnimation className="col-span-3" animationData={Instagram} />
-        <LottieAnimation className="row-span-2" animationData={Youtube} />
+    <div className="grid sm:grid-cols-3 sm:auto-rows-min">
+      <div>
+        <LittleText>Quêm sou eu?</LittleText>
+        <MainText>Luisa Oliveira</MainText>
+      </div>
+      <Paragraph className="text-gray-900 my-12 text-lg sm:row-start-2 sm:self-center sm:row-span-2 sm:text-4xl">
+        lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam Lorem
+        ipsum dolor, sit amet consectetur adipisicing elit. Nihil error est
+        minima quaerat maxime accusamus cupiditate delectus porro saepe possimus
+        tenetur, iusto sunt incidunt impedit earum, expedita deleniti atque
+        quas.
+      </Paragraph>
+      <div className="grid grid-rows-3 grid-flow-col gap-4 sm:grid-rows-2 sm:grid-cols-2 sm:row-span-2 sm:col-start-2 sm:row-start-2 sm:col-span-2 sm:self-center">
         <LottieAnimation
-          className="col-span-2 row-span-2"
+          className="col-span-3 sm:col-span-2 sm:justify-self-center"
+          animationData={Instagram}
+        />
+        <LottieAnimation
+          className="row-span-2 sm:row-span-1 sm:justify-self-center"
+          animationData={Youtube}
+        />
+        <LottieAnimation
+          className="col-span-2 row-span-2 sm:row-span-1 sm:justify-self-center"
           animationData={Tiktok}
         />
       </div>
-      <div className="grid gap-5">
+      <div className="grid gap-5 sm:flex sm:flex-grow">
         {luisaData.map(({ title, spec }) => (
           <LuisaData title={title} spec={spec} key={title + spec} />
         ))}
