@@ -46,7 +46,7 @@ export default function Home() {
           ADQUIRA O E-BOOK!
         </Button>
       </section>
-      <section className="my-20 flex flex-wrap items-center gap-10">
+      <section className="my-20 flex flex-wrap justify-center items-center gap-10">
         <MainText>O que você vai aprender?</MainText>
         <CourseData />
         <Button className="text-sm">COMPRE AGORA O E-BOOK</Button>
