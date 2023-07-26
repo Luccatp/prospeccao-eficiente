@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 export default function Home() {
   return (
     <main className="container flex flex-col items-center">
-      <section className="mt-16 grid h-screen sm:auto-rows-min sm:grid-cols-2 sm:grid-rows-3">
+      <section className="mt-16 grid sm:auto-rows-min sm:gap-6 sm:grid-cols-2 lg:gap-0">
         <div>
           <LittleText>Como achar os seus clientes?</LittleText>
           <h1 className="text-5xl font-bold text-gray-700 sm:text-6xl">
@@ -23,11 +23,11 @@ export default function Home() {
           animationData={ebookAnimation}
           className="w-32 h-32 sm:w-64 sm:h-64 justify-self-center mt-4 sm:row-span-2 sm:self-center"
         />
-        <p className="my-12 sm:my-0 sm:text-xl">
+        <p className="my-12 sm:my-0 sm:text-xl md:text-2xl">
           Nesse E-book vou te ensinar técnicas eficientes e comprovadas de como
           sair do 0 ao primeiro cliente.
         </p>
-        <Button className="sm:col-span-2 md:col-span-1">
+        <Button className="w-fit justify-self-center sm:justify-self-auto">
           COMPRE AGORA O E-BOOK!
         </Button>
       </section>

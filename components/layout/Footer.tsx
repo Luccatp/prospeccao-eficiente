@@ -11,10 +11,10 @@ const Footer: FC<FooterProps> = ({}) => {
       <span className="text-gray-600">Entre em contato comigo!</span>
       <div className="grid grid-flow-col gap-10">
         <Link href={"https://www.instagram.com/luisaoliveirx/"} target="_blank">
-          <Instagram className="text-pink-600" size={30} />
+          <Instagram className="text-pink-600 hover:text-pink-900" size={30} />
         </Link>
         <Mail
-          className="text-pink-600"
+          className="text-pink-600 hover:text-pink-900  cursor-pointer"
           size={30}
           onClick={() => {
             window.open("mailto:contatoluisaoliverx@gmail.com");
