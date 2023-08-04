@@ -17,23 +17,23 @@ const textInfo: Info[] = [
   },
   {
     title: "Tipos de empresas",
-    text: "Como as empresas se comportam é muito importam para o seu sucesso",
+    text: "Saber como as empresas se comportam é muito importante para o seu sucesso.",
   },
   {
     title: "Como escolher um nicho",
-    text: "O nicho é a principal escolha para o seu sucesso, saiba como escolher",
+    text: "O nicho pode mudar o rumo da sua carreira, saiba como escolher!",
   },
   {
     title: "Fechar clientes por indicações",
-    text: "Indicações são a forma mais certeira de se conseguir clients, saiba como",
+    text: "Indicações são a forma mais certeira de se conseguir clients, entenda como converter em vendas.",
   },
   {
     title: "Como fazer prospecção ativa",
-    text: "Não adianta ficar esperando, você precisa ir atrás dos seus clientes",
+    text: "Não adianta ficar esperando, você precisa ir atrás dos seus clientes!",
   },
   {
     title: "O que fazer depois da prospecção",
-    text: "A prospecção não acaba quando você fecha o cliente, saiba o que fazer depois",
+    text: "A prospecção não acaba quando você fecha o cliente, saiba o que fazer depois.",
   },
 ];
 
