@@ -8,9 +8,6 @@ import { ArrowBigRightDash, User } from "lucide-react";
 interface NavbarProps {}
 
 const Navbar: FC<NavbarProps> = ({}) => {
-  const isEmbeddedBrowser = /FBAN|FBAV|FBMS|FB_IAB|FB4A|FBAN\/Messenger/.test(
-    navigator.userAgent
-  );
   return (
     <nav className="grid grid-cols-3 fixed w-full bg-blend-saturation backdrop-filter backdrop-blur-sm justify-center items-center h-14 px-6 border-b border-gray-200 z-50">
       <div className="col-start-1 row-span-2 justify-self-start md:justify-self-center md:col-start-2">
