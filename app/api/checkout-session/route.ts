@@ -20,16 +20,16 @@ export async function GET() {
 
 
         if(isCustomer.data.length > 0) {
-            return NextResponse.json({url: "http://localhost:3000/dashboard"})
+            return NextResponse.json({url: "https://www.luisaoliveirx.com.br/dashboard"})
         }
     }  
 
     const session = await stripe.checkout.sessions.create({
         customer_email: user.emailAddresses[0].emailAddress,
-        success_url: "http://localhost:3000/dashboard",
+        success_url: "https://www.luisaoliveirx.com.br/dashboard",
         line_items: [
             {
-                price: "price_1NG5pJAELPJChHva93uqtJGj",
+                price: "price_1NbPggAELPJChHvasPyTgDnU",
                 quantity: 1
             }
         ],
