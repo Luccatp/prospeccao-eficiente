@@ -28,11 +28,21 @@ const PDFLoader: FC<PDFLoaderProps> = ({}) => {
   }
   return (
     <div className="flex flex-col h-full flex-1 flex-grow items-center">
-      <embed
-        src="/E-book.pdf#toolbar=0"
-        type="application/pdf"
-        className="w-full max-w-[600px] h-full flex-1 flex-grow overflow-y-scroll"
-      />
+      <div
+        className="w-full max-w-[600px] h-full flex-1 flex-grow"
+        style={{ overflow: "auto", WebkitOverflowScrolling: "touch" }}
+      >
+        <embed
+          src="/E-book.pdf#toolbar=0&scrollbar=1"
+          type="application/pdf"
+          style={{
+            overflow: "auto",
+            WebkitOverflowScrolling: "touch",
+            width: "100%",
+            height: "100%",
+          }}
+        />
+      </div>
     </div>
   );
 };
