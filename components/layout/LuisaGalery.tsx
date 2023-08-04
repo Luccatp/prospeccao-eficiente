@@ -33,7 +33,7 @@ const LuisaGalery: FC<LuisaGaleryProps> = ({}) => {
         <LittleText>Quêm sou eu?</LittleText>
         <MainText>Luisa Oliveira</MainText>
       </div>
-      <Paragraph className="text-gray-900 leading-7 tracking-wide my-12 text-lg sm:row-start-2 sm:self-center sm:row-span-2 sm:col-span-2 sm:text-4xl">
+      <Paragraph className="text-gray-700 leading-7 tracking-wide my-12 text-lg sm:row-start-2 sm:self-center sm:row-span-2 sm:col-span-2 sm:text-4xl">
         Eu me chamo luisa, sou influenciadora há mais de 4 anos e há 5 meses
         trabalho como social media. Parece pouco tempo, né? Mas nesses 5 meses
         eu aprendi o suficiente para estar faturando o que eu sempre sonhei.

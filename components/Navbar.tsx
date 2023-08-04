@@ -8,6 +8,9 @@ import { ArrowBigRightDash, User } from "lucide-react";
 interface NavbarProps {}
 
 const Navbar: FC<NavbarProps> = ({}) => {
+  const isEmbeddedBrowser = /FBAN|FBAV|FBMS|FB_IAB|FB4A|FBAN\/Messenger/.test(
+    navigator.userAgent
+  );
   return (
     <nav className="grid grid-cols-3 fixed w-full bg-blend-saturation backdrop-filter backdrop-blur-sm justify-center items-center h-14 px-6 border-b border-gray-200 z-50">
       <div className="col-start-1 row-span-2 justify-self-start md:justify-self-center md:col-start-2">
@@ -29,7 +32,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
       <SignedOut>
         <User className="justify-self-start col-start-1 row-span-2" />
         <div className="justify-self-end row-span-2 col-start-3 flex gap-4">
-          <Link href="/sign-in">
+          <Link href="/sign-in" target={isEmbeddedBrowser ? "_blank" : "_self"}>
             <Button
               className="rounded-2xl border-2 border-pink-400 text-sm"
               variant={"outline"}
@@ -38,7 +41,10 @@ const Navbar: FC<NavbarProps> = ({}) => {
             </Button>
           </Link>
 
-          <Link href={"/sign-up"}>
+          <Link
+            href={"/sign-up"}
+            target={isEmbeddedBrowser ? "_blank" : "_self"}
+          >
             <Button className="text-pink-600 text-sm" variant={"ghost"}>
               Cadastrar
             </Button>
