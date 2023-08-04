@@ -29,7 +29,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
       <SignedOut>
         <User className="justify-self-start col-start-1 row-span-2" />
         <div className="justify-self-end row-span-2 col-start-3 flex gap-4">
-          <Link href="/sign-in">
+          <Link href="/sign-in" target="_blank">
             <Button
               className="rounded-2xl border-2 border-pink-400 text-sm"
               variant={"outline"}
@@ -38,7 +38,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
             </Button>
           </Link>
 
-          <Link href={"/sign-up"}>
+          <Link href={"/sign-up"} target="_blank">
             <Button className="text-pink-600 text-sm" variant={"ghost"}>
               Cadastrar
             </Button>
