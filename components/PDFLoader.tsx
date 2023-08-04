@@ -10,6 +10,7 @@ interface PDFLoaderProps {}
 
 const PDFLoader: FC<PDFLoaderProps> = ({}) => {
   const { user, isLoaded } = useUser();
+  const isInstagram = navigator.userAgent.includes("Instagram");
   const router = useRouter();
   useEffect(() => {
     fetch("/api/is-customer").then(async (res) => {
@@ -27,12 +28,19 @@ const PDFLoader: FC<PDFLoaderProps> = ({}) => {
   }
   return (
     <div className="flex flex-col h-full flex-1 flex-grow items-center">
-      <iframe
-        src="/E-book.pdf#toolbar=0"
-        className="w-full max-w-[550px] h-full flex-1 flex-grow overflow-y-scroll"
-        width={500}
-        height={800}
-      />
+      {!isInstagram ? (
+        <object
+          style={{
+            overflow: "auto",
+            WebkitOverflowScrolling: "touch",
+          }}
+          data="/E-book.pdf#toolbar=0"
+          type="application/pdf"
+          className="w-full max-w-[500px] h-full flex-1 flex-grow overflow-y-scroll"
+        />
+      ) : (
+        <p>Abra o site no eu navegador padrão</p>
+      )}
     </div>
   );
 };
