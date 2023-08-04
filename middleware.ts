@@ -8,7 +8,7 @@ import { goToCheckout } from "./lib/fetchCheckout-session";
 // See https://clerk.com/docs/nextjs/middleware for more information about configuring your middleware
 export default authMiddleware({
     publicRoutes: [
-        "/", "/sign-in", "/sign-up"
+        "/", "/sign-in", "/sign-up", "/capajpg"
     ],
     apiRoutes: [
         "/api/checkout-session"

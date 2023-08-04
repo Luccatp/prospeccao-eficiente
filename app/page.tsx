@@ -36,10 +36,9 @@ export default async function Home() {
       <section className="flex my-20 flex-col sm:mb-40">
         <MainText>Você não está sozinho nessa jornada!</MainText>
         <Paragraph className="text-gray-900 mt-12 text-lg">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-          excepturi animi iure error reiciendis iusto. Veritatis quos est
-          corporis molestiae ipsam, praesentium eum sit eius harum blanditiis ex
-          distinctio temporibus.
+          Eu sei como é ser uma social media iniciante e querer ter o primeiro
+          cliente mas não fazer IDEIA de como consegui-lo. Esse e-book foi feito
+          pra te ajudar nisso.
         </Paragraph>
       </section>
       <section className="grid gap-14">

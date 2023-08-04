@@ -1,27 +1,32 @@
 "use client";
 import { FC, useEffect, useState } from "react";
 import { useUser } from "@clerk/nextjs";
+import getStripe from "@/lib/stripe";
+import { NextResponse } from "next/server";
+import { useRouter } from "next/navigation";
+import { Loader2 } from "lucide-react";
 
 interface PDFLoaderProps {}
 
 const PDFLoader: FC<PDFLoaderProps> = ({}) => {
-  const [PDFFile, setPDFFile] = useState(null);
-  const { user } = useUser();
-
+  const { user, isLoaded } = useUser();
+  const router = useRouter();
   useEffect(() => {
-    // async function callPDF() {
-    //   return await fetch(
-    //     "https://www.googleapis.com/drive/v3/files/13lQCcNtLz9HUm6aY5zwTj2BIlaFgJcCR"
-    //   ).then((res) => {
-    //     res.json().then((data) => setPDFFile(data));
-    //   });
-    // }
-    // callPDF();
-    // console.log(PDFFile);
+    fetch("/api/is-customer").then(async (res) => {
+      res.json().then((data) => {
+        router.push(data.url);
+      });
+    });
   }, []);
+  if (!isLoaded) {
+    return (
+      <div className="flex flex-col h-full flex-1 flex-grow items-center">
+        <Loader2 className="w-16 h-16 text-gray-700 animate-spin" />
+      </div>
+    );
+  }
   return (
     <div className="flex flex-col h-full flex-1 flex-grow items-center">
-      <p>Olá {user ? user.fullName : "fulano"}, seja bem vindo!</p>
       <object
         data="/E-book.pdf#toolbar=0"
         type="application/pdf"

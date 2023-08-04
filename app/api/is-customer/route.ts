@@ -20,25 +20,8 @@ export async function GET() {
 
 
         if(isCustomer.data.length > 0) {
-            return NextResponse.json({url: "http://localhost:3000/dashboard"})
+            return NextResponse.json({url: "/dashboard"})
         }
     }  
-
-    const session = await stripe.checkout.sessions.create({
-        customer_email: user.emailAddresses[0].emailAddress,
-        success_url: "http://localhost:3000/dashboard",
-        line_items: [
-            {
-                price: "price_1NG5pJAELPJChHva93uqtJGj",
-                quantity: 1
-            }
-        ],
-        customer_creation: "always",
-        mode: "payment",
-    })
-
-    if(session.url === null) {
-        return NextResponse.json({message: "Erro inesperado ocorreu, tente novamente mais tarde"}, {status: 500})
-    }
-    return NextResponse.json({url: session.url}, {status: 200})
+    return NextResponse.json({url: "/"})
 }

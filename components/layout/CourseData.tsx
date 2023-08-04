@@ -12,27 +12,27 @@ interface Info {
 
 const textInfo: Info[] = [
   {
-    title: "Lorem ipsum dolor sit",
+    title: "Tipos de prospecção",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam",
   },
   {
-    title: "Lorem ipsum dolor sit",
+    title: "Tipos de empresas",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam",
   },
   {
-    title: "Lorem ipsum dolor sit",
+    title: "Como escolher um nicho",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam",
   },
   {
-    title: "Lorem ipsum dolor sit",
+    title: "Fechar clientes por indicações",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam",
   },
   {
-    title: "Lorem ipsum dolor sit",
+    title: "Como fazer prospecção ativa",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam",
   },
   {
-    title: "Lorem ipsum dolor sit",
+    title: "O que fazer depois da prospecção",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam",
   },
 ];
