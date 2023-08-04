@@ -27,10 +27,11 @@ const PDFLoader: FC<PDFLoaderProps> = ({}) => {
   }
   return (
     <div className="flex flex-col h-full flex-1 flex-grow items-center">
-      <object
-        data="/E-book.pdf#toolbar=0"
-        type="application/pdf"
-        className="w-full max-w-[500px] h-full flex-1 flex-grow"
+      <iframe
+        src="/E-book.pdf#toolbar=0"
+        className="w-full max-w-[550px] h-full flex-1 flex-grow overflow-y-scroll"
+        width={500}
+        height={800}
       />
     </div>
   );

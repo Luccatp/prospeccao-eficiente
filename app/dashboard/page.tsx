@@ -13,7 +13,7 @@ const Page: FC<pageProps> = ({}) => {
         <ArrowLeft className="absolute top-4 left-4 text-gray-700 cursor-pointer" />
       </Link>
       <div className="h-screen gap-10 justify-center flex flex-col">
-        <h1 className="text-4xl mt-2 font-bold text-gray-700 text-center">
+        <h1 className="hidden text-2xl mt-6 font-bold text-gray-700 text-center md:text-4xl md:flex md:mt-2">
           E-Book Prospecção Eficiente
         </h1>
         <PDFLoader />
