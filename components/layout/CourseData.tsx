@@ -13,27 +13,27 @@ interface Info {
 const textInfo: Info[] = [
   {
     title: "Tipos de prospecção",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam",
+    text: "Quais são os tipos de prospecção e qual é o melhor para você?",
   },
   {
     title: "Tipos de empresas",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam",
+    text: "Como as empresas se comportam é muito importam para o seu sucesso",
   },
   {
     title: "Como escolher um nicho",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam",
+    text: "O nicho é a principal escolha para o seu sucesso, saiba como escolher",
   },
   {
     title: "Fechar clientes por indicações",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam",
+    text: "Indicações são a forma mais certeira de se conseguir clients, saiba como",
   },
   {
     title: "Como fazer prospecção ativa",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam",
+    text: "Não adianta ficar esperando, você precisa ir atrás dos seus clientes",
   },
   {
     title: "O que fazer depois da prospecção",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam",
+    text: "A prospecção não acaba quando você fecha o cliente, saiba o que fazer depois",
   },
 ];
 
