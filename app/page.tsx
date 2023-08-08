@@ -13,7 +13,6 @@ import { UserButton } from "@clerk/nextjs";
 export default async function Home() {
   return (
     <main className="container flex flex-col items-center">
-      <Navbar />
       <section className="mt-16 md:mb-28 grid sm:auto-rows-min sm:gap-6 sm:grid-cols-2 lg:gap-0">
         <div>
           <LittleText>Como achar os seus clientes?</LittleText>
